@@ -1,0 +1,25 @@
+{
+    "name": "g4/cron",
+    "description": "g4 cron like parser with ability to parse expressions with resolution in seconds - based on PHP Cron Expression Parser",
+    "keywords": [
+        "cron",
+        "task"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dejan Samardzija",
+            "email": "samardzija.dejan@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"G4\\Cron\\": "src/"}
+    },
+    "require-dev": {
+
+    },
+    "require": {
+        "php"                       : ">=5.3.2",
+        "mtdowling/cron-expression" : "1.0.3"
+    }
+}
