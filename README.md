@@ -7,14 +7,8 @@ Cron
 
 > Using Composer and Packagist
 
-in composer.json file add:
-
-```json
-{
-    "require": {
-        "g4/cron": "*"
-    }
-}
+```sh
+composer require g4/cron
 ```
 
 ```php
