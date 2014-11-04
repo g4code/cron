@@ -53,7 +53,7 @@ class CronExpression extends \Cron\CronExpression
      *
      * @return CronExpression
      */
-    public static function factory($expression, Cron\FieldFactory $fieldFactory = null)
+    public static function factory($expression, \Cron\FieldFactory $fieldFactory = null)
     {
         $mappings = array(
             '@yearly'   => '0 0 0 1 1 *',
@@ -78,7 +78,7 @@ class CronExpression extends \Cron\CronExpression
      * @param string       $expression   CRON expression (e.g. '8 * * * *')
      * @param FieldFactory $fieldFactory Factory to create cron fields
      */
-    public function __construct($expression, Cron\FieldFactory $fieldFactory)
+    public function __construct($expression, \Cron\FieldFactory $fieldFactory)
     {
         if( ! $fieldFactory instanceof \G4\Cron\FieldFactory) {
             throw new InvalidArgumentException('This is updated package that requires \G4\Cron\FieldFactory to work, using original one will break execution');
