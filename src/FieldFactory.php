@@ -15,6 +15,11 @@ use Cron\YearField;
 
 class FieldFactory extends \Cron\FieldFactory
 {
+    /**
+     * @var array
+     */
+    private $fields;
+    
     public function getField($position)
     {
         if (!isset($this->fields[$position])) {
